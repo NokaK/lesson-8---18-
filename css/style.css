@@ -1,0 +1,67 @@
+/* position property */
+.box {
+    height: 650px;
+    width: 100%;
+    position: relative;
+}
+
+button {
+    width: 250px;
+    background: red;
+    border-radius: 20px;
+    padding: 10px;
+}
+.cover {
+    height: 100%;
+    width:  100%;
+    position: absolute;
+    top: 0;
+    left :0;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+
+}
+.image-box {
+    height: 100%;
+}
+/* .bg-wrapper {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+} */
+
+/* position property */
+.bg-image{
+    background-image: url(../images/baelen.jpg);
+    width: 100%;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.title-h5{
+    color: #fff;
+    font-size: 40px;
+    /* transition-property: all;
+    transition-delay: 0.3s;
+    transition-duration: 0.3s;
+    transition-timing-function: linear; */
+    transition: all 0.3s linear 0.3s ;
+}
+.title-h5:hover{
+    color: aqua;
+    background: pink;   
+}
+
+.animation-block {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+      animation: cube  6s infinite 
+}
+
+@keyframes cube {
+    0% {top:0;  background-color : green;}
+    50% {top: 100px;  background-color : blue;};
+    100% {top: 200px;  background-color : pink;}
+}
